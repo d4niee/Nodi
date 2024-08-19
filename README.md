@@ -22,12 +22,11 @@ The following steps describe how to create a new bot that you can use Nodi
 
 ### install nodejs
 
-If you run the Bot on your Raspberry Pi with Raspi Blitz you can install Nodejs with following command
+If you run the Bot on your Raspberry Pi with Raspi Blitz you can install Nodejs with following command. This will install the current LTS version of Nodejs
 ```bash
 sudo apt update
 sudo apt install nodejs
 ```
-This will install the current LTS version of Nodejs
 
 ### add your bot to the environment file
 
