@@ -2,9 +2,11 @@
 Nodi is a Telegram bot for monitoring and Logging your Bitcoin Full-Node. The Bot was designed to be used with the Raspi Blitz Project (see <a href="https://github.com/raspiblitz/raspiblitz"><b>here<b></a>)
 
 ## Preparation
+
 Before you can start using Nodi you have to create your own Telegram bot (It's free and simple! 🎉). Also you need to install nodejs in the System you want to run the bot (Raspi Blitz for example).
 
 ### create your own bot using the botfather
+
 The following steps describe how to create a new bot that you can use Nodi
 
 - Contact @BotFather in your Telegram messenger
