@@ -1,0 +1,23 @@
+{
+  "name": "nodi",
+  "version": "1.0.0",
+  "description": "Nodi is a Telegram bot for monitoring and Logging your Bitcoin Full-Node. The Bot was designed to be used with the Raspi Blitz Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d4niee/Nodi.git"
+  },
+  "author": "d4niee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d4niee/Nodi/issues"
+  },
+  "homepage": "https://github.com/d4niee/Nodi#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
