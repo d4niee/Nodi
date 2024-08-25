@@ -1,13 +1,15 @@
-// src/commands/uptime.js
+// Warning: This command only works on a unix based system (raspberry pi for example) with the uptime command
+// installed
 
-const { exec } = require('child_process');
+import { exec } from 'child_process';
+import TelegramBot, { Message } from 'node-telegram-bot-api';
 
-module.exports = function(bot, msg) {
+export default function uptime(bot: TelegramBot, msg: Message): void {
     const chatId = msg.chat.id;
 
-    exec('uptime', (error, stdout, stderr) => {
+    exec('uptime', (error: Error | null, stdout: string, stderr: string) => {
         if (error) {
-            bot.sendMessage(chatId, `Error executing uptime: ${error.message}`);
+            bot.sendMessage(chatId, `Error executing uptime: ${error.message}\n\n🚨 Be aware to host your Bot on a Raspi Blitz to avoid issues`);
             return;
         }
         if (stderr) {
@@ -38,4 +40,4 @@ module.exports = function(bot, msg) {
             }
         }
     });
-};
+}
