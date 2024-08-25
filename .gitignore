@@ -8,4 +8,4 @@ lib/
 lib-doc/
 .DS_Store
 .env
-.dist
+dist/
