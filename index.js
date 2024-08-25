@@ -1,12 +1,17 @@
 const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config();
 
+const uptimeCommand = require('./commands/uptime');
+
 const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, {polling: true});
 
 bot.on('message', (msg) => {
-    var Hi = "hi";
-    if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
-        bot.sendMessage(msg.chat.id,"Hello dear user");
+    const chatId = msg.chat.id;
+
+    // Check if the message is "/uptime"
+    if (msg.text.toString().toLowerCase() === "/uptime") {
+        uptimeCommand(bot, msg);
     }
+    
 });
