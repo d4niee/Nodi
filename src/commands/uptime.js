@@ -1,3 +1,5 @@
+// src/commands/uptime.js
+
 const { exec } = require('child_process');
 
 module.exports = function(bot, msg) {

@@ -1,3 +1,5 @@
+// src/listeners/onMessage.js
+
 module.exports = function(bot, commands) {
     bot.on('message', (msg) => {
         const chatId = msg.chat.id;
