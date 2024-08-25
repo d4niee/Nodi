@@ -8,6 +8,11 @@ interface Command {
     (bot: TelegramBot, msg: TelegramBot.Message): void;
 }
 
+/**
+ * Handles every incoming message
+ * Handles incoming Commands and initialising them
+ * @param bot Telegram Bot
+ */
 export function onMessage(bot: TelegramBot): Promise<void> {
     return new Promise((resolve, reject) => {
         fs.readdir(commandsDir, (err, files) => {

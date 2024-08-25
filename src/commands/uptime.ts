@@ -1,9 +1,13 @@
-// Warning: This command only works on a unix based system (raspberry pi for example) with the uptime command
-// installed
-
 import { exec } from 'child_process';
 import TelegramBot, { Message } from 'node-telegram-bot-api';
 
+/**
+ * Warning: This command only works on a unix based system (raspberry pi for example) with the uptime command
+ * installed
+ * 
+ * @param bot Telegram Bot
+ * @param msg Message
+ */
 export default function uptime(bot: TelegramBot, msg: Message): void {
     const chatId = msg.chat.id;
 
